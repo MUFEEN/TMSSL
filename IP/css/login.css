@@ -1,0 +1,62 @@
+body{
+    background-image: url(C:/Users/Administrator/Desktop/IP/resources/3HMrJAExiaZ9hYHNt3ccWE.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+html,body{
+    margin:0;
+    padding: 0;
+    height:100%;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+} 
+
+.full-height{
+    background: rgba(26, 26, 26, 0.548);
+    background-attachment: fixed ;
+    max-height: 100vh;
+    height: 100vh;
+}    
+
+table{
+    
+    background-color: rgba(231, 227, 227, 0.822);
+    align-items: center;
+    
+}
+
+
+table tr{
+    height: 40px;
+}
+
+ {
+    
+}
+
+
+
+
+
+
+
+
+
+
+.w3-footer-mufeen{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 13px;
+
+    
+}
+
+.w3-footer-container{
+width: 100%;
+background: rgba(48, 21, 21, 0.774);
+color: white;
+}

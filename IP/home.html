@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+
+
+</head>
+<body>
+  <div class="full-height">
+    <center>
+   <div class="w3-container w3-light-grey" >
+       <h1 class="w3-left w3-xxlarge w3-wide"><b>TRADITIONAL MEDICAL SYSTEM IN SRI LANKA</b></h1>
+   </div>
+        
+       <div class="menu-bar-container">
+        <ul class="sidebar">
+          <li onclick=hidesidebar()><i class='bx bx-x'></i></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="Ayurvedha.html">Treatments</a>
+            <div class="sub-menu-1">
+              <ul>
+                  <li><a href="Ayurvedha.html" >Ayurvedha</a></li>
+              <li ><a href="#">Siddha</a></li>
+              <LI><a href="">Unani</a></LI>
+              </ul>
+          </div>
+          </li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="#">About Us</a></li>
+          
+        </ul>
+        <ul>
+          <li class="hideOnMobile" ><a href="home.html">Home</a></li>
+          <li class="hideOnMobile"><a href="#">Treatments</a>
+            <div class="sub-menu-1">
+              <ul>
+                  <li><a href="Ayurvedha.html" >Ayurvedha</a></li>
+              <li ><a href="#">Siddha</a></li>
+              <LI><a href="">Unani</a></LI>
+              </ul>
+          </div>
+          </li>
+          <li class="hideOnMobile"><a href="#">Locations</a></li>
+          <li class="hideOnMobile"><a href="Gallery.html">Gallery</a></li>
+          <li class="hideOnMobile"><a href="#">About Us</a></li>
+          
+          <li class="menu-button" onclick=showsidebar()><i class='bx bx-menu'></i></li>
+        </ul>
+       </div>
+
+       <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+
+
+          <div class="slide first">
+            <img src="resources/s2.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="resources/g4.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="resources/g9.webp" alt="">
+          </div>
+          <div class="slide">
+            <img src="resources/h1.jpg" alt="">
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+
+
+        </div>
+
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+
+       </div>
+
+     
+
+
+
+
+       
+
+
+       <div class="Content">
+        <h1>The traditional system of medicine in Sri Lanka</h1><hr>
+        <P>Four systems of traditional medicine have been adopted in Sri Lanka: Ayurveda, Siddha, Unani and Deshiya Chikitsa. 
+          The Ayurveda and Deshiya Chikitsa systems use mainly plant and herbal preparations for the treatment of diseases - the former uses about 2000 species, the latter about 500.
+          The plants are used singly or as mixtures. The traditional systems of medicine have a vast literature, mainly in the form of manuscripts. 
+          <br>
+          <br>
+          The principle of the Ayurvedic system is to consider the body as a whole, ailments of different organs not being treated separately as in modern medicine. 
+          Similarly, Ayurveda takes into account the actions of the drug in its entirety. 
+          Research therefore must be carried out in hospitals or biological laboratories and not in chemical laboratories where plant extracts are subject inevitably to chemical reactions. 
+          <br>
+          <br>
+          Therefore the chemical approach to identify active principles is a complete deviation from the principles of traditional medicine. 
+          Research on plants should be carried out for the further development of traditional systems of medicine and not to their detriment. 
+          The threat of extinction of certain species of plants and herbs is stressed, the causes being the destruction of jungles, the greater demand for raw materials for increased manufacture of traditional medicinal preparations, the absence of organised cultivation of medicinal plants, and unscientific harvesting. 
+          The compilation of encyclopaedias of plants used in traditional medicine is highly recommended for every country interested in preserving the traditional systems of medicine.</P>
+        
+       </div>
+
+       <div class="Content2">
+        <h1>Why traditonal medical treatments better than English medical treatment?</h1>
+        <P>ADVANTAGES OF TRADITIONAL MEDICINES
+          Traditional medicines have almost no side effects and they are proven enough because they have been advised from many generations and they have been quite efficient. Furthermore, traditional medicines are made from herbs and natural practices that won’t just cure the specific symptom but they make a whole body in its healthy condition. So, traditional medicine is a passive or limited treatment but it provides an error free treatment for those symptoms without any side effects.</P>
+       </div>
+       
+    
+
+  
+  
+  <div class="w3-container w3-margin-top w3-footer-mufeen w3-footer-container">
+    <p class="w3-center"><b>&copy; 2023 | All rights reserved by Mufeenitheen MHM</b></p>
+   </div>
+
+  </center>
+</div>
+  
+
+   
+
+ 
+
+<script>
+  function showsidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+
+  function hidesidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
+
+  var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked =true;
+      counter++;
+      if(counter > 4){
+        counter=1;
+      }
+    }, 5000);
+ </script>
+
+
+</body>
+</html>
